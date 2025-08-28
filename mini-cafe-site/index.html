@@ -13,13 +13,23 @@
       height: 100vh;
       overflow: hidden;
     }
-    /* Background */
+    /* Background with aesthetic coffee and rain */
     body::before {
       content: "";
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: url('beans.jpg') no-repeat center center/cover;
-      animation: move 30s linear infinite;
+      background: url('coffee-rain.jpg') no-repeat center center/cover;
+      animation: move 40s linear infinite;
+      z-index: -2;
+      filter: brightness(0.7);
+    }
+    /* Rain overlay */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://i.ibb.co/MRr0xHd/rain-overlay.gif') repeat;
+      opacity: 0.2;
       z-index: -1;
     }
     @keyframes move {
@@ -30,7 +40,7 @@
     header {
       padding: 20px;
       font-size: 1.5rem;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
     }
     main {
       display: flex;
@@ -48,6 +58,26 @@
     p {
       font-size: 1.2rem;
       max-width: 600px;
+      margin-bottom: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #c49a6c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #a87c52;
+    }
+    /* Menu Section */
+    #menu {
+      padding: 50px;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
     }
   </style>
 </head>
@@ -58,6 +88,17 @@
   <main>
     <h1>One sip away to make your day special</h1>
     <p>Come and enjoy our aromatic coffee made from the finest beans. Relax and savor the cozy atmosphere with us.</p>
+    <a href="#menu" class="button">Let me get your order</a>
   </main>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <p>☕ Espresso - 119</p>
+    <p>🥛 Cappuccino - 119</p>
+    <p>🍫 Mocha - 119</p>
+    <p>🫖 Herbal Tea - 109</p>
+    <p>🍰 Cheesecake - 99</p>
+  </section>
 </body>
 </html>
