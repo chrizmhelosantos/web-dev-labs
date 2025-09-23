@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Profile Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 40px 0;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 24px 18px;
+      width: 260px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    }
+    .card img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid #4CAF50;
+    }
+    .card h3 {
+      margin: 10px 0 8px 0;
+      color: #333;
+      font-size: 1.3em;
+    }
+    .card p {
+      color: #666;
+      font-size: 0.95em;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Fitness Influencer 1">
+      <h3>David Laid</h3>
+      <p>Fitness model and influencer, known for aesthetic bodybuilding and motivation.</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Fitness Influencer 2">
+      <h3>Chris Bumstead (CBum)</h3>
+      <p>Classic Physique Mr. Olympia champion, inspiring millions with discipline and passion.</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="Fitness Influencer 3">
+      <h3>Sam Sulek</h3>
+      <p>Young fitness influencer rising fast, admired for strength and authenticity.</p>
+    </div>
+  </div>
+</body>
+</html>
