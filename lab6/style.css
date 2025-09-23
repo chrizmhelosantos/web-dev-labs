@@ -1,0 +1,114 @@
+/* This is the external stylesheet (style.css) */
+
+/* Cozy Styled Box */
+.styled-box {
+    width: 260px;
+    padding: 22px;
+    border: 2px solid #a1887f; /* warm brown */
+    background-color: #fbe9e7; /* soft peachy beige */
+    font-size: 1.1em;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.styled-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    background-color: #fff3e0; /* warmer highlight */
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6ec; /* cozy cream background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    color: #4e342e; /* warm dark brown text */
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 850px;
+    background-color: #fff8f0;
+    border: 1px solid #e0c097;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+    padding: 36px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0c097;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.8em;
+    color: #6d4c41; /* coffee brown */
+    margin-bottom: 12px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #8d6e63;
+    font-style: italic;
+}
+
+/* Section Headings */
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.7em;
+    color: #5d4037;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ffcc80; /* warm golden accent */
+    padding-left: 12px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: circle;
+    margin-left: 25px;
+    font-size: 1.1em;
+    color: #5d4037;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #e0c097;
+}
+
+footer p {
+    font-size: 0.95em;
+    color: #7b6f67;
+    margin: 0;
+}

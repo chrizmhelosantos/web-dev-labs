@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Box Style Grid</title>
+  <style>
+    body {
+      background: #fdf6ec;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 40px 0;
+      color: #4e342e;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 240px;
+      padding: 28px 18px;
+      background: #fff;
+      border-radius: 18px;
+      text-align: center;
+      font-size: 1.05em;
+      line-height: 1.5em;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    }
+
+    .box1 {
+      border: 3px solid #a1887f;
+      background: #fbe9e7;
+    }
+    .box2 {
+      border: 3px dashed #8d6e63;
+      background: #fff3e0;
+      border-radius: 22px 60px 22px 60px;
+    }
+    .box3 {
+      border: 4px dotted #6d4c41;
+      background: #f3e5ab;
+      border-radius: 60px 22px 60px 22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-container">
+    <div class="box box1">
+      <p>This is a soft beige box with a solid border and cozy background.</p>
+    </div>
+    <div class="box box2">
+      <p>This box has a dashed border, warm tone, and playful rounded corners.</p>
+    </div>
+    <div class="box box3">
+      <p>This one features a dotted border, coffee accent, and alternating radii.</p>
+    </div>
+  </div>
+</body>
+</html>
