@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warm & Cool Aesthetic Flexbox</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientShift 18s ease infinite;
+      margin: 0;
+      padding: 40px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #2c3e50;
+    }
+
+    /* Smooth animated gradient */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Flex Container */
+    .container {
+      display: flex;
+      flex-direction: column; /* Mobile-first */
+      gap: 20px;
+      max-width: 1000px;
+      width: 95%;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Box Styling */
+    .box {
+      background: linear-gradient(135deg, #ffe0b2, #90caf9); /* warm peach + cool blue */
+      border: none;
+      border-radius: 20px;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #37474f;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .box:hover {
+      transform: translateY(-8px) scale(1.03);
+      background: linear-gradient(135deg, #ffd3b6, #64b5f6); /* hover: brighter warm+cool */
+      box-shadow: 0 12px 28px rgba(255, 152, 0, 0.4), 
+                  0 6px 20px rgba(100, 181, 246, 0.4);
+      cursor: pointer;
+    }
+
+    /* Desktop View */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row; /* side by side */
+        justify-content: space-between;
+      }
+      .box {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+</body>
+</html>

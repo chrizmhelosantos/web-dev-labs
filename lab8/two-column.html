@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solace Cafe</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fceabb, #f8b500, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientShift 18s ease infinite;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Text Section */
+    .text-section {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .text-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(255,140,105,0.4), 
+                  0 6px 15px rgba(100,181,246,0.4);
+    }
+
+    .text-section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #ff7043; /* warm accent */
+    }
+
+    .text-section p {
+      font-size: 1.1em;
+      color: #37474f;
+    }
+
+    /* Image Section */
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 35px rgba(255,152,0,0.4), 
+                  0 8px 25px rgba(100,181,246,0.4);
+    }
+
+    /* Responsive Layout */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: center;
+      }
+      .text-section, .image-section {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-section">
+      <h2>Solace Cafe</h2>
+      <p>This photo captures a simple moment of daily comfort: a steaming cup of coffee ready to start the day. It's all about the cozy ritual of a morning brew.</p>
+    </div>
+    <div class="image-section">
+      <img src="https://st2.depositphotos.com/5355656/7824/i/950/depositphotos_78249960-stock-photo-hot-cafe-latte-and-coffee.jpg" 
+           alt="A steaming cup of coffee on a wooden table.">
+    </div>
+  </div>
+
+</body>
+</html>

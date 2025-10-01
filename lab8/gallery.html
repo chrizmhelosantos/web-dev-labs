@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm & Cool Grid Gallery</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f9d29d, #fee3bc, #a1c4fd, #c2e9fb); /* warm to cool gradient */
+            background-size: 400% 400%;
+            animation: gradientShift 20s ease infinite;
+            color: #2e2e2e;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header Style */
+        h1 {
+            text-align: center;
+            padding: 40px 10px 20px 10px;
+            font-size: 2.5em;
+            color: #ff7043; /* warm orange accent */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        }
+        
+        /* Grid Container */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            padding: 10px 40px 50px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Gallery Item Design */
+        .gallery-item {
+            background: linear-gradient(135deg, #ffe0b2, #90caf9); /* warm + cool blend */
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            padding: 30px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #37474f; /* dark cool gray for text */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(255, 112, 67, 0.5); /* warm glow */
+            background: linear-gradient(135deg, #ffccbc, #64b5f6); /* hover: brighter warm/cool */
+            cursor: pointer;
+        }
+
+        /* Responsive Breakpoints */
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PICTURES</h1>
+
+    <div class="container">
+        <div class="gallery-item">Picture 1</div>
+        <div class="gallery-item">Picture 2</div>
+        <div class="gallery-item">Picture 3</div>
+        <div class="gallery-item">Picture 4</div>
+        <div class="gallery-item">Picture 5</div>
+        <div class="gallery-item">Picture 6</div>
+    </div>
+
+</body>
+</html>
+    <p>&copy; 2024 Chrizmhelo S. Santos. All rights reserved.</p>
+    </footer>   
+
